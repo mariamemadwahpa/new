@@ -241,12 +241,12 @@ hr{
 }
 .Reviews span{
     padding: 20px;
-    font-size: 22px;
+    font-size: 20px;
 }
 .Reviews p ,.star{
     color: #000000b9;
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-top: 10px;
@@ -356,7 +356,7 @@ address{
 
 }
 .Trend{
-    width: 85%;
+    width: 90%;
     margin-bottom: 100px;
 }
 .Trend hr{
