@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../smart/style.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="contianrt">
+            <nav class="nav">
+                <div class="logoNavBar">
+                    <h1><a href="#">CLASSY<SPan>ADS</SPan></a></h1>
+                </div>
+                <div class="list">
+                    <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="#">Ads</a></li>
+                    <li><a href="./about/about.html">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                    <hr>
+                    <li><a href="./login/login.html">Log In</a></li>
+                    <li><a href="./register/register.html">Register</a></li>
+                    <button><a href="">+ Post an Ad</a> </button>
+                    </ul>
+                </div>
+
+                <div class="toggle_btn">
+                    <i class="icon-menu"></i>
+                </div>
+                <div class="dropdown_menu ">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="#">Ads</a></li>
+                    <li><a href="./about/about.html">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact">CONTACT</a></li>  
+                    <li><a href="./login/login.html">Log In</a></li>  
+                    <li><a href="./register/register.html">Register</a></li>  
+                    <a href=""><button>+ Post an Ad</button></a>
+        
+                </div>
+            </nav>
+            <div class="textHeader">
+                <div>
+                    <h1>About US</h1>
+                    <p>A World Class Classified Company</p>
+                </div>
+               
+            </div>
+        </div>
+    </header>
+    
+    <section>
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur obcaecati voluptatibus animi quia, suscipit perspiciatis similique assumenda laborum aut dolores est exercitationem atque ex cumque, adipisci nulla soluta! Voluptates, iusto?</p>
+    </section>
+
+    <footer>
+        <div class="footerone">
+            <div class="navigation">
+                <h5>Navigation</h5>
+                <p>About Us</p>
+                <p>Services</p>
+                <p>Testimonials</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="follow">
+                <h5>Follow Us</h5>
+                <div class="icon">
+                    <a href=""><i class=" icon-facebook"></i></a>
+                    <a href=""><i class=" icon-twitter"></i></a>
+                    <a href=""><i class=" icon-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footertow">
+            <p>Copyright ©2023 All rights reserved | This template is made with <i class=" icon-heart"></i>  by <a href="https://web.facebook.com/profile.php?id=100083267024247&sk=mentions&locale=ar_AR">Eng: MaRiam Emad</a></p>
+        </div>
+      </footer>
+
+      <script>
+        const toggleBtn =document.querySelector('.toggle_btn')
+        const toggleBtnIcon =document.querySelector('.toggle_btn i')
+        const dropDownMenu =document.querySelector('.dropdown_menu')
+    
+        toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+    
+        toggleBtnIcon.classList = isOpen
+        ? ' icon-cross'
+        : 'icon-menu'
+        }
+    
+      </script> 
+    
+</body>
+</html>

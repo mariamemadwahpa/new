@@ -1,0 +1,43 @@
+form{
+justify-content: center;
+display:flex ;
+flex-direction: column;
+align-items: center;
+}
+p{
+    text-align: center;
+    color: #30e3ca;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 70px;
+}
+input{
+    width: 450px;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 20px;
+}
+.but-login , .butSign{
+    width: 450px;
+    height: 50px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.but-login {
+    background-color: #30e3ca;
+}
+.or-sign{
+    font-size: 20px;
+    font-weight: bolder;
+}
+a{
+    
+    color:#30e3ca;
+   
+}
+
+  

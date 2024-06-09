@@ -1,0 +1,618 @@
+*{
+    margin: auto;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-color: #7272720d;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    background-image: url(../img/hero_2.jpg);
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+    
+}
+.contianrt{
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.458);
+}
+nav{
+    display: flex;
+    width: 85%;
+    height: 100px;
+    border-radius: 7px;
+    background-color: #fff;
+ 
+}
+nav .toggle_btn{
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: none;
+}
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 3rem;
+    /* justify-content: center; */
+    top: 60px;
+    height: 0;
+    width: 85%;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.744);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.dropdown_menu li a:hover{
+   color: #30e3ca;
+   transition: 1000ms;
+}
+.dropdown_menu.open{
+    height: auto;
+
+}
+.dropdown_menu li,.dropdown_menu button {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list ul{
+    display: flex;  
+}
+ul{
+    list-style: none;
+}
+.logoNavBar a{
+    color: #000;
+    text-decoration: none;
+}
+ul li a {
+    font-size: 20px;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+span{
+    color: #30e3ca;
+}
+hr{
+    border:#30e3cb81 solid 0.1px;
+    height: 30px;
+}
+.list ul li :hover{
+    color:#30e3ca;
+    transition:1000ms;   
+}
+.list button{
+    background-color: #30e3ca;
+    text-decoration: none;
+    border-radius: 5px;
+    width:170px;
+    height: 60px;
+}
+.list button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+
+
+}
+.textHeader h1{
+    color:#fff;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.textHeader p{
+    color: #ffffffa9;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+.searchHeader{
+    display: flex;
+    background-color: #ffffff61;
+    height: 120px;
+    width: 82.5%;
+    border-radius: 5px;
+    align-items: center;
+    margin: auto;    
+}
+.searchHeader input{
+    /* margin-left: 20px; */
+    width: 25%;
+    font-size: 22px;
+    color: #0000001f;
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 25px;
+    align-items: center;
+    margin: auto;
+}
+.searchHeader button{
+    font-size: 20px;
+    color: #0000008d;
+    font-weight: normal;
+    width: 10%;
+    background-color: #30e3ca;
+    height: 60px;
+    border-radius: 5px;
+}
+.sectionOne{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 83%;
+    height: 250px;
+    border-radius: 7px;
+    margin-top: -50px;
+}
+.sectionOne :hover{
+    background-color: #30e3ca;
+    color: #fff;
+    margin-top: -1px;
+}
+.products{
+    width: 16%;
+    line-height: 40px;
+    text-align: center;
+}
+.products i{
+    color: #30e3ca;
+    font-size: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 20px; 
+}
+.products a {
+    text-decoration: none;
+    color: #0000008a;
+    font-size: 20px;
+}
+.products button{
+    width: 90px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #000000b3;
+
+}
+
+.featuredAds{
+    width: 85%;
+    margin-top: 70px;  
+}
+.featuredAds h3{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #000000e2;
+}
+.cards{
+    display: flex;
+    gap: 40px;
+}
+.card{
+    border-radius: 10px;
+    background-color: #fff;
+    width: 25%;
+    padding-bottom: 30px;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.textAds{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 40px;
+}
+.textAds h6{
+    background-color: #0000002f;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 12px;
+    text-align: center;
+    width: 80px;
+    height: 12px;
+    color: #000000d2;
+}
+.textAds i {
+    color: #30e3ca;
+    font-size: 23px;
+    border-radius: 50px;
+    border: #7272720d solid 10px;
+}
+.Reviews span{
+    padding: 20px;
+    font-size: 22px;
+}
+.Reviews p ,.star{
+    color: #000000b9;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+address{
+    text-align: center;
+
+}
+.Popular{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    padding-top: 80px;
+    padding-bottom: 110px;
+    line-height: 50px;
+}
+.Popular h1 , .Trend h1 {
+    color:#30e3ca;
+    font-size: 40px;
+}
+.Popular p{
+    color:#0000007b;
+    font-size: 20px;
+}
+.Popular hr  {
+    background-color: #30e3ca;
+    width: 100px;
+    height: 2px;
+    margin-bottom: 80px   
+}
+
+
+.imgone ,.imgtwo{
+    display: flex;
+    width: 85%;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.imgContiner{
+    background-color: #00000065;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    padding: 0px;
+    
+}
+
+.bacImgOne{
+    background-image: url(../img/img_1.jpg);
+    /* background-size: ; */
+    
+}
+.bacImgtwo{
+    background-image: url(../img/img_2.jpg);
+    
+}
+.bacImgthree{
+    background-image: url(../img/img_3.jpg);
+}
+.bacImgOne , .bacImgtwo ,.bacImgthree {
+    background-size: cover;
+    height: 400px;
+    width: 30%;
+    border-radius: 7px;
+}
+.bacImgfour, .bacImgfive {
+    background-size: cover;
+    height: 600px;
+    width: 47%;
+    border-radius: 7px;
+}
+.bacImgfour{
+    background-image: url(../img/img_4.jpg);
+}
+.bacImgfive{
+    background-image: url(../img/img_2.jpg);
+}
+
+.imgContiner button{
+    color: #fff;
+    background-color: #30e3ca;
+    font-size: 17px;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin-bottom: 10px;  
+}
+.textImgs{
+  color: #fff;
+  padding: 50% 5%;
+}
+.textImgs p{
+    color: #ffffff98;
+}
+.bacIcon{
+    display: flex;
+    gap: 35%;
+}
+.bacIcon i{
+   font-size: 30px;
+}
+.imgtwo .bacIcon{
+    gap: 40%;
+}
+.bacIcon i {
+    font-size: 30px;
+
+}
+.Trend{
+    width: 85%;
+    margin-bottom: 100px;
+}
+.Trend hr{
+    background-color: #30e3ca;
+    width: 100px;
+    height: 2px;
+    margin: 5px;
+    margin-bottom: 50px
+}
+.Trendcards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.Trandcard{
+    width: 47%;
+    height: 260px;
+    display: flex;
+    background-color: #fff;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-bottom: 30px;
+}
+.Trandcard img{
+
+    height: 260px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.Trandcard .textAdsone{
+    width: 90%;
+}
+
+footer{
+    background-color: rgba(2, 2, 19, 0.678);
+}
+.footerone{
+    display: flex;
+    line-height: 30px;
+    padding: 150px 50px;
+    gap: 20px;
+}
+.footerone h5{
+    color:#fff;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.footerone p ,.footerone i{
+    color:#ffffff90;
+    font-size: 20px;
+    margin-left: 20px;
+}
+footer hr{
+    background-color:#ffffff90;
+    width: 80%;
+    height: 1px;
+    border: none;
+    margin-bottom: 30px;
+} 
+.about {
+    width: 35%;
+}
+.navigation {
+    width: 15%;
+}
+.follow{
+    width: 20%;
+
+}
+.input{
+    width: 25%;
+    
+}
+.input input, .input button{
+    color: #fff;
+    font-size: 20px;
+    height: 50px;
+    border: 1px solid #ffffff90 ;
+}
+.input input{
+    width: 70%;
+    background-color:rgba(2, 2, 19, 0.678);
+}
+.input button{
+    width: 20%;
+    background-color: #30e3ca;
+}
+.follow .icon a{
+    text-decoration: none;
+}
+.footertow{
+    text-align: center;
+    color:#ffffff90;
+    padding-bottom: 30px;
+}
+.footertow a{
+    color:#fff;
+    text-decoration: none;
+}
+@media (max-width:1300px) {
+    .sectionOne{
+        height: 550px;
+    }
+    .products{
+        width: 30%;
+    }
+
+
+    .cards{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 40%;
+    }
+    /* .imgs{
+        display: flex;
+    } */
+    .imgone ,.imgtwo{
+        /* display: flex; */
+        flex-wrap: wrap;
+        
+    }
+    .bacImgOne , .bacImgtwo ,.bacImgthree,.bacImgfour, .bacImgfive {
+        width: 40%;
+    }
+   
+    .Trendcards{
+        display: block;
+    }
+    .Trandcard{
+        width: 100%;
+        height:auto;
+        display: block;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+    }
+    .Trandcard img{
+        width: 100%;
+        height: 450px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+
+    }
+    .Trandcard .textAds{
+        width: 90%;
+        gap: 80%;
+
+    }
+    
+
+}
+
+@media screen and (max-width: 1100px) {
+    .nav .list{
+        display: none;
+    }
+    .nav .toggle_btn{
+        display: block;
+
+    }
+    .dropdown_menu{
+        display: block;
+    }
+    .linkNavBar a ,.ProfileNavBar a{
+        margin-left: 0px;
+        font-size: 0px;
+        
+    }
+    .icon-menu{
+        font-size: 20px;
+    }
+    .textHeader h1{
+        margin-top: 70px;
+        font-size: 30px;
+        /* margin-bottom: 150px; */
+    }
+    .searchHeader{
+        display: block;
+        height: 350px;
+        border-radius: 5px;    
+    }
+    .searchHeader input{
+        width: 80%;
+        margin-top: 25px;
+        padding: 0px;
+
+    }
+    .searchHeader button{
+        margin-top: 25px;
+        width: 80%;
+    }
+    .sectionOne{
+        align-items: center;
+        height: 580px;
+        margin-top: -50px;
+        padding: 20px;
+    }
+
+    .products{
+        width: 50%;
+    }
+    .products i{
+        font-size: 70px;
+    }
+    .cards{
+        display: block;
+    }
+    .card{
+        width: 90%;
+        padding-bottom: 10px;
+        margin-bottom: 100px;
+    }
+    .card img {
+        height: 400px;
+    }
+
+    .imgone ,.imgtwo{
+        display: block;
+
+    }
+    .bacImgOne , .bacImgtwo ,.bacImgthree, .bacImgfour, .bacImgfive {
+        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    }
+  
+    .textImgs{
+        padding: 30% 5%;
+      }
+    .bacIcon{
+    gap: 10%;
+    }
+    .imgtwo .bacIcon{
+        gap: 10%;
+    }
+    .Trandcard .textAds{
+        gap: 25%;
+    }
+   
+    .footertow{
+        font-size: 15px;
+    }
+    footer{
+        height: auto;
+    }
+    .footerone{
+        display: block;
+        padding: 50px 15px;
+    }
+    .about,.navigation,.follow,.input{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
